@@ -87,10 +87,6 @@ main {
     width: 70%;
     background-color: var(--color-5);
 }
-.coupon-code::placeholder {
-    font-size: var(--font-size-1);
-    color: var(--color-1);
-}
 .coupon-apply {
     width: 30%;
 }
@@ -151,6 +147,7 @@ button[type="submit"] {
     border: 1px solid var(--color-3);
     border-radius: var(--border-radius);
     padding: var(--input-padding);
+    font-size: var(--font-size-1);
 }
 
 /* TYPOGRAPHY */
@@ -164,4 +161,7 @@ button[type="submit"] {
 }
 .sub-total, .tax, .total {
     font-size: var(--font-size-1);
+}
+.input::placeholder {
+   color: var(--color-1);
 }
