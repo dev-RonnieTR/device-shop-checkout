@@ -15,7 +15,8 @@ html {
     --color-3: #D2D5DA;
     --color-4: #F3F4F6;
     --color-5: #FFFFFF;
-    --color-6: #E5E7EB;  
+    --color-6: #E5E7EB;
+    --vertical-gap: 1.5rem;
 }
 
 /* GRID LAYOUT */
@@ -35,7 +36,7 @@ main {
 
 .product {
     display: grid;
-    grid-template-rows: 2em 2em 5em;
+    grid-template-rows: 2em 2em 4em;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: 
     "picture    name        price" 
@@ -70,8 +71,17 @@ main {
     cursor: pointer;
 }
 
+.purchase-section > * {
+    margin: var(--vertical-gap)
+}
+
 /* NON-GRID LAYOUT */
 .product-image {
     width: 100%;
     height: auto;   
+}
+
+/* MODULES */
+.border-bottom {
+    border-bottom: 1px solid var(--color-3);
 }
