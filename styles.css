@@ -59,6 +59,15 @@ main {
 }
 .product-remove {
     grid-area: discard;
+    
+    font-weight: 700;
+    width: 1em;
+    height: 1em;
+    border: none;
+    background: none;
+}
+.product-remove:hover {
+    cursor: pointer;
 }
 
 /* NON-GRID LAYOUT */
