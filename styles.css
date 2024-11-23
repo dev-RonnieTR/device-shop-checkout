@@ -120,6 +120,9 @@ main {
     flex-direction: column;
     gap: var(--gap-2);
 }
+.contact-form-element > .input {
+    background-color: var(--color-4);
+}
 
 /* MODULES */
 .border-bottom {
