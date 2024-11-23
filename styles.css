@@ -150,6 +150,11 @@ button[type="submit"] {
     font-size: var(--font-size-1);
 }
 
+select {
+    padding: 0 var(--input-padding) !important;
+    color: var(--color-1);
+}
+
 /* TYPOGRAPHY */
 .sub-total, .tax {
     color: var(--color-2);
@@ -163,5 +168,5 @@ button[type="submit"] {
     font-size: var(--font-size-1);
 }
 .input::placeholder {
-   color: var(--color-1);
+   color: var(--color-3);
 }
