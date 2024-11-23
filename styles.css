@@ -108,6 +108,18 @@ main {
     padding: var(--input-padding);
 }
 
+.billing {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--vertical-gap) / 3);
+}
+.billing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .purchase-section > * {
     margin: var(--vertical-gap)
 }
