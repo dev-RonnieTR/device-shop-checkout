@@ -51,8 +51,8 @@ main {
 
 .product {
     display: grid;
-    grid-template-rows: 2em 2em 4em;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2rem 2rem 2rem;
+    grid-template-columns: 6rem 4fr 1fr;
     grid-template-areas: 
     "picture    name        price" 
     "picture    colour      blank"
@@ -60,7 +60,24 @@ main {
 }
 .product-picture {
     grid-area: picture;
+    
+    position: relative;
+    background-color: var(--color-5);
+    border-radius: var(--border-radius);
 }
+.iphone-image {
+    width: 2.4375rem;
+    height: auto;
+}
+.watch-image {
+    width:  1.875rem;
+    height: auto;
+}
+.imac-image {
+    width: 5rem;
+    height: auto;
+}
+
 .product-name {
     grid-area: name;
 }
@@ -135,8 +152,10 @@ main {
 }
 
 .product-image {
-    width: 100%;
-    height: auto;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 button[type="submit"] {
