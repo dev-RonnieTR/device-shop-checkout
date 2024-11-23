@@ -9,6 +9,15 @@ html {
     font-optical-sizing: auto;
 }
 
+:root {
+    --color-1: #1D1D1F;
+    --color-2: #394150;
+    --color-3: #D2D5DA;
+    --color-4: #F3F4F6;
+    --color-5: #FFFFFF;
+    --color-6: #E5E7EB;  
+}
+
 /* GRID LAYOUT */
 main {
     display: grid;
@@ -50,7 +59,8 @@ main {
     grid-area: discard;
 }
 
-img:not(.show) {
+/* NON-GRID LAYOUT */
+.product-image {
     width: 100%;
-    border: 1px solid red;
+    height: auto;   
 }
