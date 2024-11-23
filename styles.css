@@ -86,17 +86,21 @@ main {
 }
 .product-amount {
     grid-area: amount;
+    align-self: end;
 }
 .product-price {
     grid-area: price;
 }
 .product-remove {
     grid-area: discard;
+    align-self: end;
 
     width: 1em;
     height: 1em;
     border: none;
     background: none;
+    margin-left: auto;
+    line-height: 0;
 }
 .product-remove:hover {
     cursor: pointer;
