@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Review your items, choose shipping, and finish your purchase with confidence. Your satisfaction is our priority!" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <p>3 ITEMS</p>
+  </header>
+  <main>
+    <section class="purchase-section">
+      <div class="product">
+        <picture>
+          <source srcset="
+                resources/products/Gold.avif    39w,
+                resources/products/Gold@2x.avif 78w
+              " type="image/avif" />
+          <source srcset="
+                resources/products/Gold.webp    39w,
+                resources/products/Gold@2x.webp 78w
+              " type="image/webp" />
+          <source srcset="
+                resources/products/Gold.png    39w,
+                resources/products/Gold@2x.png 78w
+              " type="image/png" />
+          <img src="resources/products/Gold.png" alt="iPhone 12 Pro Golden" class="product-image" />
+        </picture>
+        <h2 class="product-name">iPhone 12 Pro</h2>
+        <p class="product-color">Golden</p>
+        <p class="product-amount">x 1</p>
+        <h3 class="product-price">$999.00</h3>
+        <button class="product-remove" aria-label="remove product">&#x2715</button>
+      </div>
+      <div class="product">
+        <picture>
+          <source srcset="
+                  resources/products/Apple-watch.avif    30w,
+                  resources/products/Apple-watchx2.avif 60w
+                " type="image/avif" />
+          <source srcset="
+                  resources/products/Apple-watch.webp    30w,
+                  resources/products/Apple-watchx2.webp 60w
+                " type="image/webp" />
+          <source srcset="
+                  resources/products/Apple-watch.png    30w,
+                  resources/products/Apple-watchx2.png 60w
+                " type="image/png" />
+          <img src="resources/products/Apple-watch.png" alt="Blue Apple Watch" class="product-image" />
+        </picture>
+        <h2 class="product-name">Apple Watch</h2>
+        <p class="product-color">Blue</p>
+        <p class="product-amount">x 1</p>
+        <h3 class="product-price">$399.00</h3>
+        <button class="product-remove" aria-label="remove product">&#x2715</button>
+      </div>
+      <div class="product">
+        <picture>
+          <source srcset="
+                      resources/products/iMac.avif    80w,
+                      resources/products/iMac@2x.avif 160w
+                    " type="image/avif" />
+          <source srcset="
+                      resources/products/iMac.webp    80w,
+                      resources/products/iMac@2x.webp 160w
+                    " type="image/webp" />
+          <source srcset="
+                      resources/products/iMac.png    80w,
+                      resources/products/iMac@2x.png 160w
+                    " type="image/png" />
+          <img src="resources/products/iMac.png" alt="Green iMac" class="product-image" />
+        </picture>
+        <h2 class="product-name">iMac</h2>
+        <p class="product-color">Green</p>
+        <p class="product-amount">x 1</p>
+        <h3 class="product-price">$1199.00</h3>
+        <button class="product-remove" aria-label="remove product">&#x2715</button>
+      </div>
+      <hr>
+      <form action="" method="post" class="coupon">
+        <input type="text" placeholder="Enter coupon code" class="coupon-code" />
+        <button class="coupon-apply">Apply Coupon</button>
+      </form>
+      <div class="billing">
+        <div class="billing-row">
+          <p>Sub Total</p>
+          <p>$2597.00</p>
+        </div>
+        <div class="billing-row">
+          <p>Tax</p>
+          <p>$623.28</p>
+        </div>
+        <div class="billing-row">
+          <p>Total</p>
+          <p>$3220.28</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <header class="contact-header">Contact information</header>
+      <form action="" method="post" class="contact-form">
+        <div class="contact-form-element contact-form-name">
+          <label for="name">First & Last name</label>
+          <input id="name" type="text" placeholder="Enter first & last name" required/>
+        </div>
+        <div class="contact-form-element contact-form-email">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter email adress" required/>
+        </div>
+        <div class="contact-form-element contact-form-country">
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="Finland">Finland</option>
+            <option value="">Rest of the world</option>
+          </select>
+        </div>
+        <div class="contact-form-element contact-form-postal">
+          <label for="postal">Postal Code</label>
+          <input type="number" placeholder="00270" required/>
+        </div>
+        <button class="contact-form-button">Continue</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
