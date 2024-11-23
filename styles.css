@@ -9,7 +9,20 @@ html {
     font-optical-sizing: auto;
 }
 
-picture, img {
+/* GRID LAYOUT */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "purchase contact";
+}
+.purchase-section {
+    grid-area: purchase;
+}
+.contact-section {
+    grid-area: contact;
+}
+
+picture:not(.show), img:not(.show) {
     position: absolute;
     width: 1px;
     top: -1px;
