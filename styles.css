@@ -188,3 +188,13 @@ select {
     font-size: calc(var(--font-size-1) * 0.9);
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "purchase"
+        "contact";
+    }
+}
