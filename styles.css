@@ -24,7 +24,7 @@ html {
     --font-size-2: 1.5rem;
 }
 
-/* GRID LAYOUT */
+/* LAYOUT */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -111,20 +111,29 @@ main {
     align-items: center;
 }
 
-
 .purchase-section > * {
     margin: var(--vertical-gap)
 }
 
-/* NON-GRID LAYOUT */
-.product-image {
-    width: 100%;
-    height: auto;   
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vertical-gap);
+}
+.contact-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--vertical-gap) / 3);
 }
 
 /* MODULES */
 .border-bottom {
     border-bottom: 1px solid var(--color-3);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;   
 }
 
 button[type="submit"] {
