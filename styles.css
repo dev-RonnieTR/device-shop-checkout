@@ -96,16 +96,6 @@ main {
 }
 .coupon-apply {
     width: 30%;
-    height: var(--input-height);
-
-    border: none;
-    border-radius: var(--border-radius);
-    background-color: var(--color-1);
-
-    color: var(--color-5);
-    font-weight: 500;
-    font-size: 1rem;
-    padding: var(--input-padding);
 }
 
 .billing {
@@ -133,4 +123,15 @@ main {
 /* MODULES */
 .border-bottom {
     border-bottom: 1px solid var(--color-3);
+}
+
+button {
+    height: var(--input-height);
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-1);
+    color: var(--color-5);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: var(--input-padding);
 }
