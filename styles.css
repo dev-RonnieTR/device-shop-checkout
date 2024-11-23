@@ -164,9 +164,18 @@ select {
     color: var(--color-1);
     font-weight: 800;
 }
-.sub-total, .tax, .total {
+.sub-total, .tax, .total, .contact-section {
     font-size: var(--font-size-1);
 }
 .input::placeholder {
    color: var(--color-3);
+}
+.contact-header {
+    color: var(--color-1);
+    font-weight: 700;
+}
+.form-label {
+    color: #394150;
+    font-size: calc(var(--font-size-1) * 0.9);
+    font-weight: 600;
 }
