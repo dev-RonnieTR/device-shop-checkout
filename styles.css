@@ -85,13 +85,7 @@ main {
 }
 .coupon-code {
     width: 70%;
-    height: var(--input-height);
-    
-    outline: none;
-    border: 1px solid var(--color-3);
-    border-radius: var(--border-radius);
-
-    padding: var(--input-padding);
+    background-color: var(--color-5);
 }
 .coupon-code::placeholder {
     font-size: var(--font-size-1);
@@ -145,6 +139,14 @@ button[type="submit"] {
     color: var(--color-5);
     font-weight: 500;
     font-size: var(--font-size-1);
+    padding: var(--input-padding);
+}
+
+.input {  
+    height: var(--input-height);
+    outline: none;
+    border: 1px solid var(--color-3);
+    border-radius: var(--border-radius);
     padding: var(--input-padding);
 }
 
