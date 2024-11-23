@@ -30,6 +30,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "purchase contact";
+
+    width: min(1200px, 95vw);
+    margin: auto;
 }
 .purchase-section {
     grid-area: purchase;
