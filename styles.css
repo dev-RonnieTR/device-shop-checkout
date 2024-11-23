@@ -137,3 +137,16 @@ button {
     font-size: var(--font-size-1);
     padding: var(--input-padding);
 }
+
+/* TYPOGRAPHY */
+.sub-total, .tax {
+    color: var(--color-2);
+    font-weight: 600;
+}
+.total {
+    color: var(--color-1);
+    font-weight: 800;
+}
+.sub-total, .tax, .total {
+    font-size: var(--font-size-1);
+}
