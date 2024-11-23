@@ -92,8 +92,7 @@ main {
 }
 .product-remove {
     grid-area: discard;
-    
-    font-weight: 700;
+
     width: 1em;
     height: 1em;
     border: none;
@@ -206,6 +205,20 @@ select {
     color: #394150;
     font-size: calc(var(--font-size-1) * 0.9);
     font-weight: 600;
+}
+.product-name, .product-color, .product-amount, .product-price, .product-remove {
+    font-size: 1rem;
+}
+.product-name, .product-price {
+    color: var(--color-1);
+    font-weight: 700;
+}
+.product-color, .product-amount, .product-remove {
+    color: var(--color-2);
+    font-weight: 500;
+}
+.product-name, .product-color, .product-amount {
+    padding: 0 1.5em;
 }
 
 @media (max-width: 768px) {
