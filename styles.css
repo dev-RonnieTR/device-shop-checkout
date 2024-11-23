@@ -22,8 +22,35 @@ main {
     grid-area: contact;
 }
 
-picture:not(.show), img:not(.show) {
-    position: absolute;
-    width: 1px;
-    top: -1px;
+.product {
+    display: grid;
+    grid-template-rows: 2em 2em 5em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "picture    name        price" 
+    "picture    colour      blank"
+    "picture    amount      discard" ;
+}
+.product-picture {
+    grid-area: picture;
+}
+.product-name {
+    grid-area: name;
+}
+.product-color {
+    grid-area: colour;
+}
+.product-amount {
+    grid-area: amount;
+}
+.product-price {
+    grid-area: price;
+}
+.product-remove {
+    grid-area: discard;
+}
+
+img:not(.show) {
+    width: 100%;
+    border: 1px solid red;
 }
