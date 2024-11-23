@@ -26,6 +26,8 @@ main {
 }
 .purchase-section {
     grid-area: purchase;
+    
+    background-color: var(--color-6);
 }
 .contact-section {
     grid-area: contact;
