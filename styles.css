@@ -34,6 +34,11 @@ html {
     width: min(100%, var(--hero-width));
     height: var(--hero-height);
     margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-1);
 }
 .hero-background {
     position: absolute;
