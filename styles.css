@@ -21,6 +21,7 @@ html {
     --hero-height: 15rem;
     --gap-1: 1.5rem;
     --gap-2: calc(var(--gap-1) / 3);
+    --product-padding: 0 1.5rem;
     --input-height: 3rem;
     --input-padding: 1rem;
     --border-radius: 0.5rem;
@@ -273,7 +274,7 @@ select {
     font-weight: 500;
 }
 .product-name, .product-color, .product-amount {
-    padding: 0 1.5em;
+    padding: var(--product-padding)
 }
 
 @media (max-width: 768px) {
@@ -286,8 +287,36 @@ select {
     }
 }
 
-@media (max-width: 382px) {
-    .product-color {
+@media (max-width: 382px) { 
+    .product {
+        grid-template-rows: 2rem 2rem 2rem 2rem;
+        grid-template-columns: 6rem 1fr;
+        grid-template-areas: 
+        "picture    name"
+        "picture    colour"
+        "picture    amount"
+        "price      discard";
+    }
+    .product-color, .product-price, .product-remove {
         align-self: center;
+    }
+    .product-price {
+        justify-self: center;
+    }
+    .product-remove {
+        margin: 0;
+        padding: var(--product-padding);
+    }
+    
+    .coupon {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .coupon-code, .coupon-apply {
+        width: 100%;
+    }
+    .coupon-apply {
+        flex: 1 0 var(--input-height);
     }
 }
