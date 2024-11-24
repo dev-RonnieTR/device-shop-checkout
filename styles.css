@@ -288,6 +288,11 @@ select {
 }
 
 @media (max-width: 382px) { 
+    .hero {
+        flex-direction: column;
+        gap: 0;
+    }
+    
     .product {
         grid-template-rows: 2rem 2rem 2rem 2rem;
         grid-template-columns: 6rem 1fr;
