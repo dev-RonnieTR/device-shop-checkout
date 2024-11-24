@@ -18,9 +18,21 @@
 </head>
 
 <body>
-  <header>
+  <header class="hero">
     <h1>Checkout</h1>
     <p>3 ITEMS</p>
+    <picture class="hero-background">
+      <source
+        srcset="resources/background/background-image@2x.avif 960w, resources/background/background-image.avif 1280w"
+        type="image/avif">
+      <source
+        srcset="resources/background/background-image@2x.webp 960w, resources/background/background-image.webp 1280w"
+        type="image/webp">
+      <source
+        srcset="resources/background/background-image@2x.png 960w, resources/background/background-image.png 1280w"
+        type="image/png">
+      <img class="hero-background-image" src="resources/background/background-image.png" alt="">
+    </picture>
   </header>
   <main>
     <section class="purchase-section">
