@@ -33,6 +33,11 @@ main {
 
     width: min(1200px, 95vw);
     margin: auto;
+    border-radius: calc(var(--border-radius) * 2.5);
+    overflow: hidden;
+}
+body {
+    background-color: var(--color-4);
 }
 .purchase-section {
     grid-area: purchase;
@@ -43,6 +48,7 @@ main {
     grid-area: contact;
 
     padding: var(--gap-1);
+    background-color: var(--color-5);
 
     display: flex;
     flex-direction: column;
