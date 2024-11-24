@@ -26,6 +26,15 @@ html {
 }
 
 /* LAYOUT */
+.hero {
+    position: relative;
+}
+.hero-background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
