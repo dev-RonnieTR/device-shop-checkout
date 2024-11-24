@@ -32,7 +32,7 @@ html {
 .hero {
     position: relative;
     width: min(100%, var(--hero-width));
-    height: var(--hero-height);
+    height: calc(var(--hero-height) / 2);
     margin: auto;
 
     display: flex;
