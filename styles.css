@@ -278,6 +278,13 @@ select {
     padding: var(--product-padding);
 }
 
+@media (min-width: 1281px) {
+    :root {
+        --hero-width: clamp(80rem, 100%, 160rem);
+        --hero-height: clamp(15rem, 19vw, 30rem);
+    }
+}
+
 @media (max-width: 768px) {
     
     main {
