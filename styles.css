@@ -203,6 +203,16 @@ select {
 }
 
 /* TYPOGRAPHY */
+.hero-heading {
+    color: var(--color-5);
+    font-size: var(--font-size-2);
+    font-weight: 600;
+}
+.hero-items {
+    color: var(--color-5);
+    font-size: calc(var(--font-size-1) / 1.3);
+}
+
 .sub-total, .tax {
     color: var(--color-2);
     font-weight: 600;
