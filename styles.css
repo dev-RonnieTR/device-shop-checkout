@@ -147,11 +147,12 @@ body {
     gap: 0.5rem;
 }
 .coupon-code {
-    width: 70%;
+    width: 75%;
     background-color: var(--color-5);
 }
 .coupon-apply {
-    width: 30%;
+    flex: 1 0 8.3em;
+    width: 25%;
 }
 
 .billing {
@@ -259,8 +260,8 @@ select {
     font-size: calc(var(--font-size-1) * 0.9);
     font-weight: 600;
 }
-.product-name, .product-color, .product-amount, .product-price, .product-remove {
-    font-size: 1rem;
+.product-name, .product-color, .product-amount, .product-price, .product-remove, .coupon-apply {
+    font-size: var(--font-size-1);
 }
 .product-name, .product-price {
     color: var(--color-1);
