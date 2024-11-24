@@ -282,6 +282,7 @@ select {
     :root {
         --hero-width: clamp(80rem, 100%, 160rem);
         --hero-height: clamp(15rem, 19vw, 30rem);
+        --font-size-root: clamp(16px, 1.25vw, 20px);
     }
 }
 
