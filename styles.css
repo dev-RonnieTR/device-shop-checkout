@@ -60,7 +60,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "purchase contact";
 
-    width: min(1200px, 95vw);
+    width: min(1200px, 95%);
     margin: auto;
     border-radius: calc(var(--border-radius) * 2.5);
     overflow: hidden;
@@ -274,12 +274,13 @@ select {
     font-weight: 500;
 }
 .product-name, .product-color, .product-amount {
-    padding: var(--product-padding)
+    padding: var(--product-padding);
 }
 
 @media (max-width: 768px) {
+    
     main {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "purchase"
