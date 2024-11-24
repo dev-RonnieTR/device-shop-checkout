@@ -92,6 +92,7 @@ body {
     "picture    colour      blank"
     "picture    amount      discard" ;
 }
+
 .product-picture {
     grid-area: picture;
     
@@ -282,5 +283,11 @@ select {
         grid-template-areas: 
         "purchase"
         "contact";
+    }
+}
+
+@media (max-width: 382px) {
+    .product-color {
+        align-self: center;
     }
 }
